@@ -1,4 +1,4 @@
-from pizza import *
+from pizza import Pizza, Margherita
 import unittest
 
 
@@ -47,13 +47,4 @@ class TestPizza(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    # for unittest testing use $ python -m unittest -v tests.py
-
-    # print tests:
-    bake(Pepperoni())
-    # Prints bake - {randint}c!, because template is None
-    delivery(Pepperoni())
-    # Prints 🛵Доставили за {randint}с!, because template is not None
-    pickup(Pepperoni())
-    # Prints 🏠Забрали за {randint}с!, because template is not None
-
+    unittest.main()
